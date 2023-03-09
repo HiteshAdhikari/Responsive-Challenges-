@@ -1,0 +1,32 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 5em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-1{
+    padding: 3em;
+    background-color: rgb(126, 126, 222);
+}
+.box-2{
+    padding: 3em;
+    background-color: rgb(94, 240, 128);
+}
+
+@media (max-width:900px) {
+    .container{
+        display: block;
+        border: none;
+    }
+    .box-1,.box-2{
+        width:50%;
+        margin: 1.4em auto;
+        height: auto;   }
+    .box-2{
+        background-color: yellow;
+    }
+}
